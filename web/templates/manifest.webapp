@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "name": "QRCODE Generator",
+  "description": "This app generate QR Code for the input text",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/static/img/icons/icon-16.ico",
+    "48": "/static/img/icons/icon-48.png",
+    "128": "/static/img/icons/icon-128.png"
+  },
+  "developer": {
+    "name": "ghostghost"
+  }
+}

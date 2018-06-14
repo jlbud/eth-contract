@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>fireapp</title>
+<style>
+    body{text-align: center}
+    .main{margin:0 auto;}
+</style>
+</head>
+<body>
+<link rel="stylesheet" href="../static/css/buttons.css">
+
+<div class="main">
+<textarea id="contents" cols="33" rows="3"></textarea>
+<br/>
+
+<input type = "button" value="Generate QR" onclick="generateQRCode()"></button>
+
+<br/>
+<div id="message"></div>
+<div id="qrcode"></div>
+</div>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script src="../static/js/qrcode.js"></script>
+<script src="../static/js/jquery.qrcode.js"></script>
+
+<script>
+    
+
+ function generateQRCode(){
+ 
+    var contents=$('#contents').val();
+    if ($("canvas")) {
+        $("canvas").remove();
+    }
+    if (contents ===""){
+        $('#message').text("Please input the content");
+        return;
+    } 
+    jQuery('#qrcode').qrcode({
+		text	: contents
+	});
+ }
+</script>
+</body>
+</html>
