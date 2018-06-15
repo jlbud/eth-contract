@@ -1,6 +1,6 @@
 package main
 
-import "token-contract/web"
+import "eth-contract/web"
 
 func main(){
 	app := &web.App{}

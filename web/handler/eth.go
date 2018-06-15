@@ -2,10 +2,10 @@ package handler
 
 import (
 	"net/http"
-	"token-contract/web/util"
-	"token-contract/web/model/response"
-	"token-contract/eth"
-	util_main "token-contract/util"
+	"eth-contract/web/util"
+	"eth-contract/web/model/response"
+	"eth-contract/eth"
+	util_main "eth-contract/util"
 	"fmt"
 )
 

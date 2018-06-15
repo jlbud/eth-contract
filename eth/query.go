@@ -5,7 +5,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"log"
 	"fmt"
-	"token-contract/eth/releaseToken"
+	"eth-contract/eth/releaseToken"
 )
 
 func GetBalance() string {

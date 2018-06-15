@@ -3,7 +3,7 @@ package web
 import (
 	"log"
 	"net/http"
-	"token-contract/web/handler"
+	"eth-contract/web/handler"
 	"github.com/gorilla/mux"
 )
 

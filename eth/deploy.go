@@ -10,7 +10,7 @@ import (
 	"time"
 	"context"
 	"bytes"
-	"token-contract/eth/releaseToken"
+	"eth-contract/eth/releaseToken"
 )
 
 const key  = `{"address":"d31953ac085fe7bb5169365461d99d54abcf76c3","crypto":{"cipher":"aes-128-ctr","ciphertext":"fe47a2dae5aee66b95ae8ddf377f651877825b888c89e7417db028d78f2ebc17","cipherparams":{"iv":"b0a9b8f40c39661126c13e0344f93de1"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"cd49d49c20a624fbcc85a287dbe9b85e774ba6d5a1445dc6d6b7b0d6960c39c0"},"mac":"5601f161cc87130ac35deca184f99f8b1f5baa324f1e56a468fcf32edd8e5f21"},"id":"f200e315-eaf8-4a65-9a3c-f8c553174e23","version":3}`
