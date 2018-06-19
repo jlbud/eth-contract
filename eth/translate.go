@@ -24,11 +24,11 @@ func translate() {
 		log.Fatalf("Failed to instantiate a Token contract: %v", err)
 	}
 	// Create an authorized transactor and spend 1 unicorn
-	auth, err := bind.NewTransactor(strings.NewReader(Key), "123456")
+	auth, err := bind.NewTransactor(strings.NewReader(Key), "123456")//0xd3账户
 	if err != nil {
 		log.Fatalf("Failed to create authorized transactor: %v", err)
 	}
-	tx, err := token.Transfer(auth, common.HexToAddress("0x822d83926bc0d775a8594e0bda8b2260cf015260"), big.NewInt(1))//给0*822账户转了387个代币
+	tx, err := token.Transfer(auth, common.HexToAddress("0x822d83926bc0d775a8594e0bda8b2260cf015260"), big.NewInt(1))//通过智能合约，0*d3给0*822账户转了387个代币
 	if err != nil {
 		log.Fatalf("Failed to request token transfer: %v", err)
 	}

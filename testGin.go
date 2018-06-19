@@ -29,7 +29,7 @@ func makeqrcode(base641 string) image.Image {
 	return code
 }
 
-func main() {
+func mainn() {
 	http.HandleFunc("/", qrcode) //设置访问的路由
 	err1 := http.ListenAndServe(":8080", nil)
 	if err1 != nil {
